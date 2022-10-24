@@ -39,9 +39,14 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Exception\MenuNotFoundException.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Properties\Constants.cs" />
+        <Compile Include="SubMenuSelecter.cs" />
         <Compile Include="소개\Hello.cs" />
+        <Compile Include="소개\Introduction.cs" />
+        <Compile Include="유형\Point.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="소개\readme.md" />
