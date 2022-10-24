@@ -1,5 +1,4 @@
-﻿using CSharp.Properties;
-
+﻿
 namespace CSharp
 {
     internal class Program

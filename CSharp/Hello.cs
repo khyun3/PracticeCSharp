@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.Properties
+namespace CSharp
 {
     /*
      * URL : https://learn.microsoft.com/ko-kr/dotnet/csharp/tour-of-csharp/#hello-world
