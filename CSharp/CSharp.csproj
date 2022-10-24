@@ -44,8 +44,8 @@
         <Compile Include="소개\Hello.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="소개\소개.md" />
-      <Content Include="유형\유형.md" />
+      <Content Include="소개\readme.md" />
+      <Content Include="유형\readme.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
