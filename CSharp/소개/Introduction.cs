@@ -1,24 +1,25 @@
-﻿using System.Diagnostics;
+﻿using System;
+using CSharp.Properties;
 
-namespace CSharp
+namespace CSharp.소개
 {
-    public class Introduction : SubMenuSelecter
+    public class Introduction : ISubMenuSelector
     {
-        private Hello hello;
+        private Hello _hello;
 
-        public Introduction() => hello = new Hello();
-        
-        public void select(string subMenu)
+        public Introduction() => _hello = new Hello();
+
+        public void Select(string subMenu)
         {
             switch (subMenu)
             {
                 case "1":
-                    hello.print();
+                    _hello.print();
                     break;
                 default:
+                    Console.WriteLine(Constants.MENU_IS_NOT_EXIST);
                     break;
             }
-            
         }
     }
 }
