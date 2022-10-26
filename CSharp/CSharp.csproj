@@ -53,10 +53,13 @@
         <Compile Include="유형\Point3D.cs" />
         <Compile Include="유형\SPoint.cs" />
         <Compile Include="유형\TypeMember.cs" />
+        <Compile Include="프로그램_구성_요소\Color.cs" />
+        <Compile Include="프로그램_구성_요소\ProgramComponent.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="소개\readme.md" />
       <Content Include="유형\readme.md" />
+      <Content Include="프로그램_구성_요소\readme.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

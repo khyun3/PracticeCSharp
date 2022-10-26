@@ -2,6 +2,7 @@
 using CSharp.Properties;
 using CSharp.소개;
 using CSharp.유형;
+using CSharp.프로그램_구성_요소;
 
 namespace CSharp
 {
@@ -12,6 +13,7 @@ namespace CSharp
             string[] menu;
             var introduction = new Introduction();
             var type = new TypeMember();
+            var programComponent = new ProgramComponent();
             do
             {
                 menu = GetInput();
@@ -24,6 +26,7 @@ namespace CSharp
                         type.Select(menu[1]);
                         break;
                     case "3":
+                        programComponent.Select(menu[1]);
                         break;
                     case "-1":
                         Console.WriteLine(Constants.PROGRAM_EXIT);
