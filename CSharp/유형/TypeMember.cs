@@ -56,7 +56,7 @@ namespace CSharp.유형
                 case "4": //구조체
                     Console.WriteLine("SPoint : { X : " + _sPoint.X + ", Y : " + _sPoint.Y);
                     break;
-                case "5":
+                case "5": //인터페이스
                     IControl control = _editBox;
                     control.Paint();
                     IDataBound dataBound = _editBox;
