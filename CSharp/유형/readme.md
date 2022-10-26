@@ -118,3 +118,48 @@ interface IComboBox : ITextBox, IListBox
 {
 }
 ```
+
+### 열거형
+* 열거형식은 상수 값 집합
+```csharp
+public enum SomeRootVegetable
+    HorseRadish,
+    Radish,
+    Turnip
+```
+* 플래그를 정의하여 `enum`활용
+```csharp
+[Flags]
+public enum Seasons
+{
+    None = 0,
+    Spring = 1,
+    Summer = 2,
+    Autumn = 4,
+    Winter = 8,
+    ALL = Srping | Summer | Autumn | Winter
+}
+```
+
+### Nullable 유형
+* 모든 형식의 변수는 nullable을 활용해 선언될 수 있음
+* null 허용 변수는 값이 없음을 나타내는 `null`값을 가질 수 있음
+* null 허용 값 형식(구조체, 열거형)은 `System.Nullable<T>`로 표현됨
+* null을 허용하지 않는 형식과 null 참조 형식은 모두 기본 참조 형식으로 표현
+* 컴파일러는 null 참조가 먼저 null에 대해 값을 검사하지 않음
+  * `역참조`되는 값이라면 경고를 발생
+```csharp
+int? optionalInt = default; //null 
+optionalInt = 5;
+string? optionalText = default; //null
+optionalText = "Hello World.";
+``` 
+
+### 튜플
+* 간단한 데이터 구조에서 여러 데이터 요소를 그룹화를 위해 사용 
+* `(`와 `)`사이에서 멤버의 형식과 이름을 선언함으로써 인스턴스화 시킴
+```csharp
+(double Sum, int Count) t2 = (4.5, 3);
+Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}.");
+```
+* 튜플은 기본 구성 요소를 사용하지 않고도 여러 멤버를 위한 또 다른 데이터 구조를 제공할 수 있음

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using CSharp.Properties;
 
 namespace CSharp.유형
@@ -14,6 +15,11 @@ namespace CSharp.유형
         private Point b;
 
         private SPoint _sPoint;
+
+        //Feature 'target-typed object creation' is not available. Please use language version 9.0 or greater.
+        //private EditBox _editBox = new();
+        private EditBox _editBox = new EditBox();
+        
         public TypeMember()
         {
             //1
@@ -48,7 +54,33 @@ namespace CSharp.유형
                     Console.WriteLine(b.ToString());
                     break;
                 case "4": //구조체
-                    Console.WriteLine(_sPoint.X + ", " + _sPoint.Y);
+                    Console.WriteLine("SPoint : { X : " + _sPoint.X + ", Y : " + _sPoint.Y);
+                    break;
+                case "5":
+                    IControl control = _editBox;
+                    control.Paint();
+                    IDataBound dataBound = _editBox;
+                    Console.WriteLine("_editBox -> IDataBound : "+ dataBound.GetType());
+                    break;
+                case "6"://enum
+                    Console.WriteLine(SomeRootVegetable.Turnip);
+                    var theYear = Seasons.All;
+                    var startingOnEquinox = Seasons.Summer | Seasons.Autumn;
+                    Console.WriteLine("theYear : " + theYear);
+                    Console.WriteLine("startingOnEquinox : " + startingOnEquinox);
+                    Console.WriteLine(Seasons.Spring);
+                    break;
+                case "7": //Nullable 유형
+                    int? optionalInt = default;
+                    //Feature 'nullable reference types' is not available. Please use language version 8.0 or greater.
+                    //string optionalText = default;
+                    Console.WriteLine("Nullable int default value : " + optionalInt);
+                    optionalInt = 5;
+                    Console.WriteLine("after set value : " + optionalInt);
+                    break;
+                case "8": //튜플
+                    (double Sum, int Count) t2 = (5.1, 3);
+                    Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}.");
                     break;
                 default:
                     Console.WriteLine(Constants.MENU_IS_NOT_EXIST);

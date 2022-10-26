@@ -46,6 +46,7 @@
         <Compile Include="소개\Hello.cs" />
         <Compile Include="소개\Introduction.cs" />
         <Compile Include="유형\EditBox.cs" />
+        <Compile Include="유형\EnumGroup.cs" />
         <Compile Include="유형\IBoxGroup.cs" />
         <Compile Include="유형\Pair.cs" />
         <Compile Include="유형\Point.cs" />

@@ -1,4 +1,6 @@
-﻿namespace CSharp.유형
+﻿using System.Reflection;
+
+namespace CSharp.유형
 {
     public interface IControl
     {
@@ -17,5 +19,10 @@
 
     public interface IComboBox : ITextBox, IListBox
     {
+    }
+
+    public interface IDataBound
+    {
+        void Bind(Binder b);
     }
 }
