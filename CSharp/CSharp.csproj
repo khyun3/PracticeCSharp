@@ -55,6 +55,8 @@
         <Compile Include="유형\TypeMember.cs" />
         <Compile Include="프로그램_구성_요소\Color.cs" />
         <Compile Include="프로그램_구성_요소\ProgramComponent.cs" />
+        <Compile Include="프로그램_구성_요소\Calculator.cs" />
+        <Compile Include="프로그램_구성_요소\Squares.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="소개\readme.md" />
