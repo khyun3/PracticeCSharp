@@ -54,9 +54,16 @@
         <Compile Include="유형\SPoint.cs" />
         <Compile Include="유형\TypeMember.cs" />
         <Compile Include="프로그램_구성_요소\Color.cs" />
+        <Compile Include="프로그램_구성_요소\Constant.cs" />
+        <Compile Include="프로그램_구성_요소\Entity.cs" />
+        <Compile Include="프로그램_구성_요소\Expression.cs" />
+        <Compile Include="프로그램_구성_요소\MyList.cs" />
+        <Compile Include="프로그램_구성_요소\Operation.cs" />
+        <Compile Include="프로그램_구성_요소\OverloadingEx.cs" />
         <Compile Include="프로그램_구성_요소\ProgramComponent.cs" />
         <Compile Include="프로그램_구성_요소\Calculator.cs" />
         <Compile Include="프로그램_구성_요소\Squares.cs" />
+        <Compile Include="프로그램_구성_요소\VariableReference.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="소개\readme.md" />
