@@ -56,6 +56,7 @@
         <Compile Include="프로그램_구성_요소\Color.cs" />
         <Compile Include="프로그램_구성_요소\Constant.cs" />
         <Compile Include="프로그램_구성_요소\Entity.cs" />
+        <Compile Include="프로그램_구성_요소\EventExample.cs" />
         <Compile Include="프로그램_구성_요소\Expression.cs" />
         <Compile Include="프로그램_구성_요소\MyList.cs" />
         <Compile Include="프로그램_구성_요소\Operation.cs" />

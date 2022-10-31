@@ -92,6 +92,33 @@ namespace CSharp.프로그램_구성_요소
                     Console.WriteLine("list 1 Capacity : " + j);
                     
                     break;
+                case "12": //인덱서
+                    var names = new MyList<string>();
+                    names.Add("Liz");
+                    names.Add("Martha");
+                    names.Add("Beth");
+                    for (int k = 0; k < names.Count; k++)
+                    {
+                        var s = names[k]; //인덱서
+                        names[k] = s.ToUpper();
+                        Console.WriteLine(names[k]);
+                    }
+                    break;
+                case "13": //이벤트
+                    EventExample.Usage();
+                    break;
+                case "14": //연산자
+                    var op1 = new MyList<int>();
+                    op1.Add(1);
+                    op1.Add(2);
+                    var op2 = new MyList<int>();
+                    op2.Add(1);
+                    op2.Add(2);
+                    //새로운 의미를 부여 했기 때문에 Equals로 해야 할 작업을 ==으로 할 수 있게됨
+                    Console.WriteLine(op1 == op2);  // Outputs "True"
+                    op2.Add(3);
+                    Console.WriteLine(op1 == op2);  // Outputs "False"
+                    break;
                 default:
                     Console.WriteLine(Constants.MENU_IS_NOT_EXIST);
                     break;
